@@ -1,0 +1,27 @@
+@media (max-width: 40rem) {
+
+    .wrapper-sm .btn{
+        position: relative;
+        width: 90%;
+        height: 50px;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        border-radius: 40px;
+        background-color: #007c89;
+        margin-left: 16px;
+        margin-bottom: 2rem;
+        font-size: 16px;
+        color: #fff;
+    }
+}
+
+@media (max-width: 31.25rem){
+    body{
+        background-color: #fff;
+    }
+
+    form{
+        width: 100% !important;
+    }
+}

@@ -1,0 +1,195 @@
+body {
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(75, 14, 154, 1) 35%,
+    rgba(0,212,255,1) 100%);
+    font-family: 'Poppins', 'sans-serif';
+}
+
+.btn-primary{
+    width: 100%;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(75, 14, 154, 1) 35%,
+    rgba(0,212,255,1) 100%);
+}
+
+
+.form-control{
+    color: rgba(0, 0, 0, .87);
+    border-bottom-color: rgba(0, 0, 0, .42);
+    box-shadow: none !important;
+    border: none;
+    border-bottom: 1px solid;
+    border-radius: 4px 4px 0 0;
+}
+
+h4{
+    font-size: 2rem !important;
+    font-weight: 700;
+}
+.form-label{
+    font-family: 800 !important;
+}
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    min-height: calc(100vh - 175px);
+    margin-top: 0;
+}
+
+.container ::selection {
+    background: rgba(255, 113, 208, 0.2);
+}
+
+.wrapper{
+    position: relative;
+    padding: 2rem;
+    background-color: #fff;
+    border: solid 1px transparent;
+    border-radius: 6px;
+    margin-top: 0;
+}
+
+h1{
+    font-family:"Means Web", Georgia, Times, "Times New Roman", serif;
+    font-weight: 400;
+}
+
+.wrapper p{
+    margin-bottom: 0.5rem;
+}
+
+.wrapper  a{
+    color: #007c89;
+}
+
+a:hover{
+    cursor: pointer;
+    color: #004e56;
+}
+
+.wrapper .input-box{
+    width: 400px;
+}
+
+.input-box input{
+    width: 90%;
+    height: 5vh;
+    border: solid 1px;
+    color: var(--color-text);
+    padding-left: 1rem;
+    border-radius: 3px;
+    font-size: 1rem;
+}
+
+.input-box .weight{
+    font-weight: 500;
+}
+
+.input-box .weight{
+    font-weight: 500;
+}
+
+
+.input-box input:focus{
+    border: 1px solid linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(75, 14, 154, 1) 35%,
+    rgba(0,212,255,1) 100%);;
+    box-shadow: 0 0 1.5px linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(75, 14, 154, 1) 35%,
+    rgba(0,212,255,1) 100%);;
+    outline: none;
+}
+
+.input-box .row{
+    display: flex;
+    flex-direction: row;
+}
+.input-box .word{
+    padding-right: 180px;
+}
+
+.icon p{
+    color: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(75, 14, 154, 1) 35%,
+    rgba(0,212,255,1) 100%);;
+    cursor: pointer;
+}
+
+.line p{
+    cursor: pointer;
+}
+
+.line i{
+    cursor: pointer;
+    padding-left: 50px;
+}
+
+.line p:hover{
+    color: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(75, 14, 154, 1) 35%,
+    rgba(0,212,255,1) 100%);;
+}
+
+
+.line i:hover{
+    color: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(75, 14, 154, 1) 35%,
+    rgba(0,212,255,1) 100%);;
+}
+
+.wrapper .stay-connected{
+    margin-bottom: 1.25rem;
+}
+
+.stay-connected input[type="checkbox"]:checked + label:before {
+    border-color: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(75, 14, 154, 1) 35%,
+    rgba(0,212,255,1) 100%);;
+    background-color: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(75, 14, 154, 1) 35%,
+    rgba(0,212,255,1) 100%);;
+}  
+
+.stay-connected input[type="checkbox"]:focus{
+    border: 1px solid linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(75, 14, 154, 1) 35%,
+    rgba(0,212,255,1) 100%);;
+    box-shadow: 0 0 1.5px linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(75, 14, 154, 1) 35%,
+    rgba(0,212,255,1) 100%);;
+    outline: none;
+    background-color: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(75, 14, 154, 1) 35%,
+    rgba(0,212,255,1) 100%);;
+}
+  
+.input-box p{
+    font-weight: 400;
+}
+
+.stay-connected p{
+    font-weight: 400;
+}
+
+.stay-connected input[type="checkbox"] {
+    transform: scale(1.75); /* Agrandir le checkbox */
+    border: 1px solid;
+}
+
+.stay-connected input[type="checkbox"]:checked {
+    background-color: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(75, 14, 154, 1) 35%,
+    rgba(0,212,255,1) 100%);; /* Couleur verte lorsque le checkbox est coché */
+}
+
+.wrapper .btn{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 40px;
+    background-color: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(75, 14, 154, 1) 35%,
+    rgba(0,212,255,1) 100%);;
+    box-shadow: 0 0 10px rgb(0,0 ,0 , 0.1);
+    font-size: 16px;
+    color: #fff;
+}
+
+.wrapper .btn:hover{
+    background-color: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(75, 14, 154, 1) 35%,
+    rgba(0,212,255,1) 100%);
+}

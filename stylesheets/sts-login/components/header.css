@@ -1,0 +1,29 @@
+.banner{
+    padding-top: 1rem;
+    margin-left: 0;
+}
+
+.language{
+    padding: 1rem 1rem 0 0;
+    color: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(75, 14, 154, 1) 35%,rgba(0,212,255,1) 100%);
+    outline: none;
+    border: none;
+    
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+select#language_selector {
+    border: none;
+    background: #f6f6f4;
+    color: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(75, 14, 154, 1) 35%,rgba(0,212,255,1) 100%);
+}
+
+i{
+    margin-right: 5px;
+}
+
