@@ -1,0 +1,10 @@
+@import url(chopping.css);
+@import url(products.css);
+@import url(search.css);
+
+body{
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-left: 1rem;
+}

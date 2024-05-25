@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
       } else {
         const error = await response.json();
         errorMessage.textContent = `Authentification error : ${error.message}`;
-        form.appendChild(errorMessage); // Ajouter le message d'erreur au formulaire
+        form.appendChild(errorMessage);
       }
     } catch (error) {
       console.error('Une erreur est survenue :', error);
