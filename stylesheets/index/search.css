@@ -1,0 +1,30 @@
+.search-form {
+  position: relative;
+}
+
+.search-results {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.search-results table {
+  margin-bottom: 0;
+}
+
+.search-results table td,
+.search-results table th {
+  vertical-align: middle;
+}
+
+.search-results table img {
+  max-width: 50px;
+  max-height: 50px;
+}

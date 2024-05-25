@@ -1,0 +1,57 @@
+:root{
+    --color-text: #000;
+    --color-accent: #007c89;
+
+    --color-bg-primary: #f6f6f4;
+
+    --ff-body: 'Inter', sans-serif;
+    --ff-heading: 'Inter', sans-serif;
+}
+
+
+/* Couleur accent pour hover des liens: #2196f3 */
+
+
+body {
+    background-color: var(--color-bg-primary);
+    color: var(--color-text);
+    font-family: var(--ff-body);
+    font-size: 100%;
+    font-weight: 400;
+    overflow-x: hidden;
+    height: auto;
+    max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--color-heading);
+    font-family: var(--ff-heading);
+    font-weight: 700;
+    line-height: 1.15;
+    margin-bottom: 1.625rem;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3.75rem;
+    margin-top: 1.625rem;
+}
+
+h3 {
+    font-size: 3.25rem;
+}
+
+section {
+    padding-block: 3rem;
+}
+
+p {
+    margin-bottom: 1.25rem;
+}
+
+a {
+    color: var(--color-link);
+}

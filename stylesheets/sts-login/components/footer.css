@@ -1,0 +1,23 @@
+footer{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin-bottom: 0;
+}
+
+footer ::selection {
+    color: var(--legacy-text-primary-color);
+    background: rgba(255, 113, 208, 0.2);
+}
+
+
+footer p{
+    font-weight: 100;
+    font-size: 12px;
+    color: rgb(36 28 21 / 65%);
+}
+
+footer a{
+    color: rgb(36 28 21 / 65%);
+}
+

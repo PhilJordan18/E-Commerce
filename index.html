@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <!-- CDN FONT AWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+  <!-- Bootsrtap CSS CDN-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- CSS LINKS -->
+  <link rel="stylesheet" href="stylesheets/index/style.css">
+  <!-- JS LINKS -->
+  <script src="./javascript/auth.js" type="text/javascript" defer></script>
+  <script src="./javascript/log/login.js" defer></script>
+  <script src="./javascript/items.js" type="text/javascript" defer></script>
+</head>
+
+<body>
+  <header class="d-flex  bg-light py-2">
+    <div class="location"></div>
+    <div class="navbar-cart">
+      <a href="#" class="icon-btn primary-icon-text icon-text-btn">
+        <img src="./images/cart-1.svg" alt="Icon">
+        <span class="icon-text text-style-1">0</span>
+      </a>
+      <div class="navbar-cart-dropdown">
+        <div class="checkout-style-2">
+          <div class="checkout-header d-flex justify-content-between">
+            <h6 class="title">Shopping Cart</h6>
+          </div>
+          <div class="checkout-table table-responsive">
+            <table class="table">
+              <tbody id="table-products">
+
+              </tbody>
+            </table>
+          </div>
+          <div class="checkout-footer">
+            <div class="checkout-sub-total d-flex justify-content-between">
+              <p class="value">Subtotal Price:</p>
+              <p class="price">$0.00</p>
+            </div>
+            <div class="checkout-sub-total d-flex justify-content-between">
+              <p class="value">Taxes:</p>
+              <p class="price">$0.00</p>
+            </div>
+            <div class="checkout-total d-flex justify-content-between">
+              <div class="value">Total:</div>
+              <div class="price">$0.00</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <div class="container">
+      <div class="d-flex align-items-center">
+        <div class="user-info me-3"></div>
+        <a class="navbar-brand" href="#">IMAGE</a>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+        <form class="d-flex search-form">
+          <input class="form-control me-2" type="search" placeholder="Search Products..." aria-label="Search"
+            id="search-input" />
+          <button class="btn btn-outline-primary" type="submit" id="search-btn">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+        <div class="d-flex align-items-center ms-3">
+          <a class="btn btn-primary login-link ms-5 me-4" id="login" href="./login.html" role="button">Login</a>
+          <a class="btn btn-primary logout-btn" id="logout" href="#" role="button">Logout</a>
+        </div>
+      </div>
+    </div>
+    <div class="search-results" style="display: none;">
+      <div class="container">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Image</th>
+              <th>Name</th>
+              <th>Description</th>
+              <th>Price</th>
+              <th>DETAILS</th>
+            </tr>
+          </thead>
+          <tbody id="search-results-body"></tbody>
+        </table>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <div class="container">
+      <div class="row justify-content-center" id="cardContainer">
+      </div>
+    </div>
+  </main>
+
+  <!-- Bootstrap JS CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script type="module" src="javascript/search/search-main.js"></script>
+</body>
+
+</html>
