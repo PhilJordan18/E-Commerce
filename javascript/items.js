@@ -92,6 +92,13 @@ document.addEventListener('DOMContentLoaded', function () {
     .catch(error => {
       console.error('Erreur lors de la récupération des données JSON :', error);
     });
+    const checkoutButton = document.querySelector('.btn-checkout');
+    if (checkoutButton) {
+      checkoutButton.addEventListener('click', () => {
+        localStorage.setItem('cartItems', JSON.stringify(items));
+        window.location.href = 'checkout.html';
+      });
+    }  
 
   renderCart();  
 });
@@ -108,6 +115,7 @@ function addToCart(item) {
   }
   updateCartNotification();
   renderCart();
+  localStorage.setItem('cartItems', JSON.stringify(items)); // Mise à jour du localStorage
 }
 
 //================= Fonction pour mettre à jour la pastille du panier =================//
@@ -215,6 +223,7 @@ function removeFromCart(name, size) {
   items = items.filter(item => !(item.name === name && item.size === size));
   updateCartNotification();
   renderCart();
+  localStorage.setItem('cartItems', JSON.stringify(items)); 
 }
 
 //================= Fonction pour la mise à jour de la quantité =================//
@@ -225,6 +234,7 @@ function updateQuantity(name, size, delta) {
     updateCartNotification();
     renderCart();
   }
+  localStorage.setItem('cartItems', JSON.stringify(items)); 
 }
 
 //================= Fonction pour les calculs de factures =================//
